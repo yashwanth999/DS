@@ -19,19 +19,19 @@ void printlist(struct node* n)
 
 void rev_list(struct node** head_ref)
 {
-    struct node* prev =NULL;
-    struct node* current = *head_ref;
-    struct node* next = NULL;
+struct node* prev =NULL;
+struct node* current = *head_ref;
+struct node* next = NULL;
 
-    while(current != NULL)
-    {
-        next = current->next;
-        current->next = prev;
-        prev = current;
-        current = next;
-    }
+while(current != NULL)
+{
+next = current->next;
+current->next = prev;
+prev = current;
+current = next;
+}
 
-    *head_ref =prev;
+*head_ref =prev;
 }
 
 int main()
@@ -43,6 +43,7 @@ int main()
     struct node *fifth = NULL;
     struct node *sixth = NULL;
     struct node *seven = NULL;
+
 
 
     head = (struct node*)malloc(sizeof(struct node));
